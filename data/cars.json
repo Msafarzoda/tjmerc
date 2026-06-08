@@ -1,0 +1,62 @@
+[
+  {
+    "id": "s-class-2024",
+    "name": "S 500 4MATIC",
+    "class": "S-Класс",
+    "type": "new",
+    "price": 185000,
+    "year": 2024,
+    "engine": "3.0L Turbo I6",
+    "power": "435 л.с.",
+    "transmission": "9G-TRONIC",
+    "color": "Обсидиан чёрный",
+    "badge": "Хит продаж",
+    "featured": true,
+    "image": ""
+  },
+  {
+    "id": "e-class-2024",
+    "name": "E 300 4MATIC",
+    "class": "E-Класс",
+    "type": "new",
+    "price": 95000,
+    "year": 2024,
+    "engine": "2.0L Turbo I4",
+    "power": "258 л.с.",
+    "transmission": "9G-TRONIC",
+    "color": "Полярный серебристый",
+    "badge": "",
+    "featured": true,
+    "image": ""
+  },
+  {
+    "id": "c-class-2024",
+    "name": "C 300 4MATIC",
+    "class": "C-Класс",
+    "type": "new",
+    "price": 65000,
+    "year": 2024,
+    "engine": "2.0L Turbo I4",
+    "power": "258 л.с.",
+    "transmission": "9G-TRONIC",
+    "color": "Графитовый серый",
+    "badge": "",
+    "featured": true,
+    "image": ""
+  },
+  {
+    "id": "gle-2024",
+    "name": "GLE 450 4MATIC",
+    "class": "GLE",
+    "type": "new",
+    "price": 120000,
+    "year": 2024,
+    "engine": "3.0L Turbo I6",
+    "power": "375 л.с.",
+    "transmission": "9G-TRONIC",
+    "color": "Горный серый",
+    "badge": "Популярный",
+    "featured": true,
+    "image": ""
+  }
+]
