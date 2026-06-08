@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --mb-black: #080808;
+  --mb-dark: #111111;
+  --mb-card: #141414;
+  --mb-border: #222222;
+  --mb-silver: #8c8c8c;
+  --mb-white: #ffffff;
+  --mb-gold: #c9a84c;
+  --mb-gold-light: #e8c97a;
+}
+
+@theme inline {
+  --font-cormorant: var(--font-cormorant);
+  --font-inter: var(--font-inter);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--mb-black);
+  color: var(--mb-white);
+  font-family: var(--font-inter), 'Helvetica Neue', sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Reusable utility classes */
+.gold { color: var(--mb-gold); }
+.border-subtle { border-color: var(--mb-border); }
+
+.card-hover {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+  border-color: #333;
+}
+
+/* Gold shimmer line */
+.gold-line {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--mb-gold), transparent);
+}
+
+/* Noise texture overlay */
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #e8c97a 0%, #c9a84c 50%, #a07830 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth fade-in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.7s ease forwards; }
+.fade-up-2 { animation: fadeUp 0.7s 0.15s ease both; }
+.fade-up-3 { animation: fadeUp 0.7s 0.3s ease both; }
